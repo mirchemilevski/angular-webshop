@@ -7,7 +7,7 @@ import { StorePageComponent } from './components/store-page/store-page.component
 import { NavbarComponent } from './components/carousel-page/navbar/navbar.component';
 import { CarouselComponent } from './components/carousel-page/carousel/carousel.component';
 import { CartComponent } from './components/carousel-page/navbar/cart/cart.component';
-import { MenuBarComponent } from './components/store-page/menu-bar/menu-bar.component';
+import { MenuBarComponent } from './components/carousel-page/menu-bar/menu-bar.component';
 import { StoreComponent } from './components/store-page/store/store.component';
 import { FooterComponent } from './components/store-page/footer/footer.component';
 import { FiltersComponent } from './components/store-page/store/filters/filters.component';
