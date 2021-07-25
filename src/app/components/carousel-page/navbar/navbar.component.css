@@ -1,0 +1,21 @@
+.cart-box {
+  position: absolute;
+  top: 40px;
+  right: 5px;
+  z-index: 2;
+  background-color: rgb(44, 37, 37);
+  border: 1px solid rgb(44, 37, 37);
+  border-radius: 2px;
+  padding: 20px 0px;
+}
+
+.cart-box ul {
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+.cart-box ul li {
+  width: 250px;
+  list-style-type: none;
+  margin: 0px 10px;
+}

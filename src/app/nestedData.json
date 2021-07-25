@@ -1,79 +1,79 @@
 [
-    {
-        "carouselProducts": [
-            {
-                "id": 1,
-                "img": "assets/images/pc.jpg",
-                "title": "iMac Pro 27 Retina 5K",
-                "price": 1999,
-                "discountPrice": 999
-            },
-            {
-                "id": 2,
-                "img": "assets/images/mouse1.jpg",
-                "title": "Razer Basilisk V2",
-                "price": 79,
-                "discountPrice": 39
-            },
-            {
-                "id": 3,
-                "img": "assets/images/mouse2.jpg",
-                "title": "Logitech G502 Hero",
-                "price": 99,
-                "discountPrice": 49
-            }
-        ]
-    },
-    {
-        "storeProducts": [
-            {
-                "id": 1,
-                "type": "controller",
-                "img": "assets/images/controller.jpg",
-                "title": "Nintendo Switch Pro Controller",
-                "price": 199,
-                "discountPrice": 99
-            },
-            {
-                "id": 2,
-                "type": "controller",
-                "img": "assets/images/controller.jpg",
-                "title": "Nintendo Switch Pro Controller",
-                "price": 199,
-                "discountPrice": 99
-            },
-            {
-                "id": 3,
-                "type": "headphones",
-                "img": "assets/images/headphones.jpg",
-                "title": "UA Sport Wireless Train Headphones",
-                "price": 59,
-                "discountPrice": 29
-            },
-            {
-                "id": 4,
-                "type": "headphones",
-                "img": "assets/images/headphones.jpg",
-                "title": "UA Sport Wireless Train Headphones",
-                "price": 59,
-                "discountPrice": 29
-            },
-            {
-                "id": 5,
-                "type": "keyboard ",
-                "img": "assets/images/pc.jpg",
-                "title": "Vulcan TKL Pro Compact Optical RGB Gaming Keyboard",
-                "price": 1999,
-                "discountPrice": 999
-            },
-            {
-                "id": 6,
-                "type": "keyboard ",
-                "img": "assets/images/pc.jpg",
-                "title": "Vulcan TKL Pro Compact Optical RGB Gaming Keyboard",
-                "price": 1999,
-                "discountPrice": 999
-            }
-        ]
-    }
+  {
+    "carouselProducts": [
+      {
+        "id": 1,
+        "img": "assets/images/pc.jpg",
+        "title": "iMac Pro 27 Retina 5K",
+        "price": 1999,
+        "discountPrice": 999
+      },
+      {
+        "id": 2,
+        "img": "assets/images/mouse1.jpg",
+        "title": "Razer Basilisk V2",
+        "price": 79,
+        "discountPrice": 39
+      },
+      {
+        "id": 3,
+        "img": "assets/images/mouse2.jpg",
+        "title": "Logitech G502 Hero",
+        "price": 99,
+        "discountPrice": 49
+      }
+    ]
+  },
+  {
+    "storeProducts": [
+      {
+        "id": 1,
+        "type": "controller",
+        "img": "assets/images/controller.jpg",
+        "title": "Nintendo Switch Pro Controller",
+        "price": 99,
+        "discountPrice": 99
+      },
+      {
+        "id": 2,
+        "type": "controller",
+        "img": "assets/images/controller.jpg",
+        "title": "Nintendo Switch Pro Controller",
+        "price": 99,
+        "discountPrice": 99
+      },
+      {
+        "id": 3,
+        "type": "headphones",
+        "img": "assets/images/headphones.jpg",
+        "title": "UA Sport Wireless Train Headphones",
+        "price": 59,
+        "discountPrice": 29
+      },
+      {
+        "id": 4,
+        "type": "headphones",
+        "img": "assets/images/headphones.jpg",
+        "title": "UA Sport Wireless Train Headphones",
+        "price": 59,
+        "discountPrice": 29
+      },
+      {
+        "id": 5,
+        "type": "keyboard",
+        "img": "assets/images/pc.jpg",
+        "title": "Vulcan TKL Pro Compact Optical RGB Gaming Keyboard",
+        "price": 39,
+        "discountPrice": 19
+      },
+      {
+        "id": 6,
+        "type": "keyboard",
+        "img": "assets/images/pc.jpg",
+        "title": "Vulcan TKL Pro Compact Optical RGB Gaming Keyboard",
+        "price": 39,
+        "discountPrice": 19
+      }
+    ]
+  }
 ]

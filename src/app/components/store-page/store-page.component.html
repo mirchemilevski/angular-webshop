@@ -1,2 +1,44 @@
-<div><app-store></app-store></div>
-<div><app-footer></app-footer></div>
+<div class="row">
+  <div class="col">
+    <div class="text-center py-4">
+      <h1>Store</h1>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-1 offset-1">
+    <div class="d-block my-3">
+      <span class="filter-cursor" (click)="filterProduct('controller')"
+        >Controller</span
+      >
+    </div>
+    <div class="d-block my-3">
+      <span class="filter-cursor" (click)="filterProduct('headphones')">
+        Headphones</span
+      >
+    </div>
+    <div class="d-block my-3">
+      <span class="filter-cursor" (click)="filterProduct('keyboard')">
+        Keyboard</span
+      >
+    </div>
+    <div class="d-block my-3">
+      <span class="filter-cursor" (click)="showAll()">Show All</span>
+    </div>
+  </div>
+  <div class="col-7 offset-1">
+    <div class="row">
+      <div class="col-md-6 mb-3" *ngFor="let storeResult of filterData">
+        <div class="w-75 text-center">
+          <img src="{{ storeResult.img }}" class="d-block w-100" />
+        </div>
+        <p>{{ storeResult.title }}</p>
+        <p class="text-primary">${{ storeResult.price }},-</p>
+        <div class="text-light text-decoration-none pointer">
+          <span class="border rounded-circle border-primary px-2 pb-1">+</span>
+          <span class="text-uppercase px-2">Add to cart</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
