@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row py-5">
   <div class="col">
     <div class="text-center py-4">
       <h1>Store</h1>
@@ -6,37 +6,61 @@
   </div>
 </div>
 <div class="row">
-  <div class="col-1 offset-1">
+  <div class="col-lg-1 offset-lg-1 text-center">
+    <div class="d-block my-5">
+      <span class="d-block text-uppercase">Categories</span>
+    </div>
     <div class="d-block my-3">
-      <span class="filter-cursor" (click)="filterProduct('controller')"
+      <span
+        class="filter-cursor text-secondary"
+        (click)="filterProduct('controller')"
+        [ngClass]="{ active: check === 'controller' }"
         >Controller</span
       >
     </div>
     <div class="d-block my-3">
-      <span class="filter-cursor" (click)="filterProduct('headphones')">
+      <span
+        class="filter-cursor text-secondary"
+        (click)="filterProduct('headphones')"
+        [ngClass]="{ active: check === 'headphones' }"
+      >
         Headphones</span
       >
     </div>
     <div class="d-block my-3">
-      <span class="filter-cursor" (click)="filterProduct('keyboard')">
+      <span
+        class="filter-cursor text-secondary"
+        (click)="filterProduct('keyboard')"
+        [ngClass]="{ active: check === 'keyboard' }"
+      >
         Keyboard</span
       >
     </div>
     <div class="d-block my-3">
-      <span class="filter-cursor" (click)="showAll()">Show All</span>
+      <span
+        class="filter-cursor text-secondary"
+        (click)="showAll('allProducts')"
+        [ngClass]="{ active: check === 'allProducts' }"
+        >Show All</span
+      >
     </div>
   </div>
-  <div class="col-7 offset-1">
+  <div class="col-lg-7 offset-lg-1">
     <div class="row">
       <div class="col-md-6 mb-3" *ngFor="let storeResult of filterData">
-        <div class="w-75 text-center">
-          <img src="{{ storeResult.img }}" class="d-block w-100" />
-        </div>
-        <p>{{ storeResult.title }}</p>
-        <p class="text-primary">${{ storeResult.price }},-</p>
-        <div class="text-light text-decoration-none pointer">
-          <span class="border rounded-circle border-primary px-2 pb-1">+</span>
-          <span class="text-uppercase px-2">Add to cart</span>
+        <div class="row">
+          <div class="col-8 offset-2">
+            <img src="{{ storeResult.img }}" class="d-block w-100" />
+            <p>{{ storeResult.title }}</p>
+
+            <p class="text-primary">${{ storeResult.price }},-</p>
+            <div class="text-light text-decoration-none pointer">
+              <span class="border rounded-circle border-primary px-2 pb-1"
+                >+</span
+              >
+              <span class="text-uppercase px-2">Add to cart</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>

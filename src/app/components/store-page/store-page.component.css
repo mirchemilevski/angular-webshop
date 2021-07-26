@@ -1,3 +1,7 @@
-.filter-cursor{
-    cursor: pointer;
+.filter-cursor {
+  cursor: pointer;
+}
+
+.active {
+  color: white !important;
 }

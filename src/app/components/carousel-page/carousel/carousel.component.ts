@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
 import nestedData from '../../../nestedData.json';
-
-console.log(nestedData[0].carouselProducts);
 
 @Component({
   selector: 'app-carousel',

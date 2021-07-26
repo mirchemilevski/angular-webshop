@@ -1,5 +1,4 @@
-import { Component, OnInit, HostListener, Inject } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-menu-bar',

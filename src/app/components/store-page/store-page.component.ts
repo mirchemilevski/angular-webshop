@@ -4,22 +4,26 @@ import nestedData from '../../nestedData.json';
 @Component({
   selector: 'app-store-page',
   templateUrl: './store-page.component.html',
-  styleUrls: ['./store-page.component.css']
+  styleUrls: ['./store-page.component.css'],
 })
 export class StorePageComponent implements OnInit {
   jsonData: any = nestedData[1].storeProducts;
   filterData: any[] = [];
-  constructor() { }
+  check: String = '';
+
+  constructor() {}
 
   ngOnInit(): void {
-    this.showAll();
+    this.showAll('allProducts');
+    this.check = 'allProducts';
   }
 
-  showAll() {
+  showAll(products: any) {
     this.filterData = [];
     this.filterData = [...this.jsonData];
     // this.filterData.push(this.jsonData);
     // console.log(this.filterData);
+    this.check = products;
   }
 
   filterProduct(btn: any) {
@@ -28,5 +32,6 @@ export class StorePageComponent implements OnInit {
     this.filterData = [...filterType];
     // this.filterData.push(filterType);
     // console.log(this.filterData);
+    this.check = btn;
   }
 }
