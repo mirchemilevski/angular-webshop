@@ -6,21 +6,24 @@
         "img": "assets/images/pc.jpg",
         "title": "iMac Pro 27 Retina 5K",
         "price": 1999,
-        "discountPrice": 999
+        "discountPrice": 999,
+        "qty": 1
       },
       {
         "id": 2,
         "img": "assets/images/mouse1.jpg",
         "title": "Razer Basilisk V2",
         "price": 79,
-        "discountPrice": 39
+        "discountPrice": 39,
+        "qty": 1
       },
       {
         "id": 3,
         "img": "assets/images/mouse2.jpg",
         "title": "Logitech G502 Hero",
         "price": 99,
-        "discountPrice": 49
+        "discountPrice": 49,
+        "qty": 1
       }
     ]
   },
@@ -32,7 +35,8 @@
         "img": "assets/images/controller.jpg",
         "title": "Nintendo Switch Pro Controller",
         "price": 99,
-        "discountPrice": 99
+        "discountPrice": 99,
+        "qty": 1
       },
       {
         "id": 2,
@@ -40,7 +44,8 @@
         "img": "assets/images/controller.jpg",
         "title": "Nintendo Switch Pro Controller",
         "price": 99,
-        "discountPrice": 99
+        "discountPrice": 99,
+        "qty": 1
       },
       {
         "id": 3,
@@ -48,7 +53,8 @@
         "img": "assets/images/headphones.jpg",
         "title": "UA Sport Wireless Train Headphones",
         "price": 59,
-        "discountPrice": 29
+        "discountPrice": 29,
+        "qty": 1
       },
       {
         "id": 4,
@@ -56,7 +62,8 @@
         "img": "assets/images/headphones.jpg",
         "title": "UA Sport Wireless Train Headphones",
         "price": 59,
-        "discountPrice": 29
+        "discountPrice": 29,
+        "qty": 1
       },
       {
         "id": 5,
@@ -64,7 +71,8 @@
         "img": "assets/images/pc.jpg",
         "title": "Vulcan TKL Pro Compact Optical RGB Gaming Keyboard",
         "price": 39,
-        "discountPrice": 19
+        "discountPrice": 19,
+        "qty": 1
       },
       {
         "id": 6,
@@ -72,7 +80,8 @@
         "img": "assets/images/pc.jpg",
         "title": "Vulcan TKL Pro Compact Optical RGB Gaming Keyboard",
         "price": 39,
-        "discountPrice": 19
+        "discountPrice": 19,
+        "qty": 1
       }
     ]
   }

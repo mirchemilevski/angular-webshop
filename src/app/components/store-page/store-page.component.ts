@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import nestedData from '../../nestedData.json';
+import { MessengerService } from '../../services/messenger.service';
 
 @Component({
   selector: 'app-store-page',
@@ -11,14 +12,14 @@ export class StorePageComponent implements OnInit {
   filterData: any[] = [];
   check: String = '';
 
-  constructor() {}
+  constructor(private msg: MessengerService) {}
 
   ngOnInit(): void {
     this.showAll('allProducts');
     this.check = 'allProducts';
   }
 
-  showAll(products: any) {
+  showAll(products: string) {
     this.filterData = [];
     this.filterData = [...this.jsonData];
     // this.filterData.push(this.jsonData);
@@ -26,12 +27,17 @@ export class StorePageComponent implements OnInit {
     this.check = products;
   }
 
-  filterProduct(btn: any) {
+  filterProduct(btn: string) {
     const filterType = this.jsonData.filter((el: any) => el.type === btn);
     this.filterData = [];
     this.filterData = [...filterType];
     // this.filterData.push(filterType);
     // console.log(this.filterData);
     this.check = btn;
+  }
+
+  handleToCart(expectedProduct: any) {
+    // console.log(expectedProduct)
+    this.msg.sendMessage(expectedProduct);
   }
 }

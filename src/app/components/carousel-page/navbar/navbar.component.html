@@ -2,21 +2,37 @@
   <a class="navbar-brand" href="#">Logo</a>
 
   <div class="navbar-nav ml-auto">
-    <a class="nav-item nav-link active pe-none" href="#">
+    <div *ngIf="cartItems.length === 0" class="alert position-relative">
+      <span class="px-3">Cart</span>
+      <span class="dot">
+        {{ cartLength }}
+      </span>
+    </div>
+    <a
+      *ngIf="cartItems.length > 0"
+      class="nav-item nav-link active pe-none"
+      href="#"
+    >
       <div class="position-relative">
         <span class="px-3">Cart</span>
-        <span class="border rounded-circle border-primary bg-primary px-2 pb-1">2</span>
+        <span class="dot">
+          {{ cartLength }}
+        </span>
         <div class="cart-box">
           <div>
-            <ul class="mb-3">
-              <li class="d-flex justify-content-between">
-                <span>iMac Pro 27 Retina 5K</span> <span>$100</span>
+            <ul class="mb-3" *ngIf="cartItems.length > 0">
+              <li
+                class="d-flex justify-content-between"
+                *ngFor="let items of cartItems"
+              >
+                <span class="font-size">{{ items.productName }}</span>
+                <span>${{ items.price }}</span>
               </li>
               <li class="border-bottom border-light"></li>
             </ul>
             <ul>
               <li class="d-flex justify-content-between">
-                <span>Total</span><span>$100</span>
+                <span>Total</span><span>${{ cartTotal }}</span>
               </li>
             </ul>
           </div>
